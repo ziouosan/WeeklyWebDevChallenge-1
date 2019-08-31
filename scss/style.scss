@@ -6,13 +6,6 @@
 
 // $nazwazmiennej: wartosc;
 
-// $breakpoints: (xsmall: (min-width: 460px),
-//     small: (min-width: 640px),
-//     medium: (min-width: 800px),
-//     large: (min-width: 1024px),
-//     xlarge: (min-width: 1200px),
-//     xxlarge: (min-width: 1440px));
-
 // definicja domieszki do zapytan o media: @mixin mq($breakpoint) {
 //     $size: map-get($breakpoints, $breakpoint);
 
@@ -30,3 +23,122 @@
 // uzycie domieszki do MQ: @include mq(xsmall) {
 //     font-size: 18px;
 // }
+
+// ---------------HEADER------------------
+
+.page-header {
+
+    &__heading {
+        width: 40%;
+        margin: 0 auto;
+    }
+
+    &__logo {
+        width: 100%;
+        padding: 1vh 0;
+        opacity: 1; // czy powinno byc opacity? chyba nie
+    }
+}
+
+// ---------------WRAPPER------------------
+
+.wrapper {
+    border: 2px dotted blue;
+}
+
+// ---------------FORMS--------------------
+
+.section {
+    height: 100%;
+    width: 40%;
+
+    &__heading {
+        text-align: center;
+        font-size: 24px;
+        margin: 10px auto;
+    }
+
+    .form {
+        border: 10px solid rgba(0, 0, 0, 0.2);
+        font-size: 16px;
+
+        &__input-container {
+            display: block;
+        }
+
+        .input-container {
+            display: flex;
+            color: rgba(112, 112, 112, 0.5);
+            margin: 20px 10px;
+            border: 1px solid #aaa;
+
+            &__icon {
+                text-align: center;
+                font-size: 1.6rem;
+                padding: 5px 10px;
+                margin: 5px 0;
+                min-width: 45px;
+            }
+
+            &__input {
+                padding-left: 15px;
+                border: none;
+                flex-grow: 1;
+            }
+
+            &__label {
+                display: none;
+            }
+        }
+    }
+}
+
+// ---------------FOOTER--------------------
+
+.footer {
+    width: 400px;
+    border: 5px solid green;
+}
+
+// ---------------MEDIA QUERIES-------------
+
+@media(min-width: 800px) {
+
+    .wrapper {
+        display: flex;
+        flex-flow: column;
+        flex-wrap: wrap;
+        max-height: 90vh;
+        border: 2px dotted red;
+        overflow: hidden;
+    }
+
+    .section {
+        height: 100%;
+        width: 40%;
+
+        &--register {
+            order: 0;
+        }
+
+        &--sign {
+            order: 1;
+        }
+
+        &--send {
+            order: 2;
+        }
+
+        &--recover {
+            order: 3;
+        }
+
+        &--subscribe {
+            order: 4;
+        }
+    }
+
+    .footer {
+        order: 5;
+    }
+}

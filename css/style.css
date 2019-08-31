@@ -6,6 +6,129 @@
 }
 
 body {
+  max-width: 800px;
+  margin: 0 auto;
   background-color: #ddd;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.page-header__heading {
+  width: 40%;
+  margin: 0 auto;
+}
+
+.page-header__logo {
+  width: 100%;
+  padding: 1vh 0;
+  opacity: 1;
+}
+
+.wrapper {
+  border: 2px dotted blue;
+}
+
+.section {
+  height: 100%;
+  width: 40%;
+}
+
+.section__heading {
+  text-align: center;
+  font-size: 24px;
+  margin: 10px auto;
+}
+
+.section .form {
+  border: 10px solid rgba(0, 0, 0, 0.2);
+  font-size: 16px;
+}
+
+.section .form__input-container {
+  display: block;
+}
+
+.section .form .input-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: rgba(112, 112, 112, 0.5);
+  margin: 20px 10px;
+  border: 1px solid #aaa;
+}
+
+.section .form .input-container__icon {
+  text-align: center;
+  font-size: 1.6rem;
+  padding: 5px 10px;
+  margin: 5px 0;
+  min-width: 45px;
+}
+
+.section .form .input-container__input {
+  padding-left: 15px;
+  border: none;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.section .form .input-container__label {
+  display: none;
+}
+
+.footer {
+  width: 400px;
+  border: 5px solid green;
+}
+
+@media (min-width: 800px) {
+  .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    max-height: 90vh;
+    border: 2px dotted red;
+    overflow: hidden;
+  }
+  .section {
+    height: 100%;
+    width: 40%;
+  }
+  .section--register {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+  }
+  .section--sign {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .section--send {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .section--recover {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  .section--subscribe {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+  }
+  .footer {
+    -webkit-box-ordinal-group: 6;
+        -ms-flex-order: 5;
+            order: 5;
+  }
 }
 /*# sourceMappingURL=style.css.map */
