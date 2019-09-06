@@ -79,6 +79,7 @@ body {
   padding: 5px 10px;
   margin: 2px 5px;
   min-width: 45px;
+  border-right: 2px solid;
 }
 
 .section .form .input-container__input {
@@ -97,6 +98,19 @@ body {
 
 .section .form .input-container__label {
   display: none;
+}
+
+.section .form .input-container__textarea {
+  font-family: "Titillium Web";
+  font-weight: 300;
+  font-size: 16px;
+  color: #AFAFAF;
+  width: 100%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#F7F7F7), to(#9A9A9A));
+  background-image: linear-gradient(#F7F7F7, #9A9A9A);
+  border: none;
+  padding: 10px;
+  resize: none;
 }
 
 .section .form .checkbox-container {
@@ -129,14 +143,43 @@ body {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  margin-left: 15px;
-  margin-right: 15px;
-  margin-bottom: 15px;
+  margin: 0 15px 15px 15px;
+  padding: 5px 0;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#B9E076), to(#5E851B));
   background-image: linear-gradient(#B9E076, #5E851B);
   border: 2px solid #7FBC5A;
   border-radius: 3px;
   cursor: pointer;
+}
+
+.section .form .form__buttons .form__button--red {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#F58793), to(#9E303C));
+  background-image: linear-gradient(#F58793, #9E303C);
+  border-color: #C26F75;
+  text-shadow: .56px .83px 0px #9E303C;
+}
+
+.section .form .form__buttons .form__button--small {
+  font-size: 18px;
+}
+
+.section .form .button-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.section .form .button-wrapper__checkbox {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin: 5px 10px 10px 15px;
+}
+
+.section .form .button-wrapper__button {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 .footer {

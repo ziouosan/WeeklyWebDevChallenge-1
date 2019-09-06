@@ -92,6 +92,7 @@
                 padding: 5px 10px;
                 margin: 2px 5px;
                 min-width: 45px;
+                border-right: 2px solid;
             }
 
             &__input {
@@ -107,6 +108,18 @@
 
             &__label {
                 display: none;
+            }
+
+            &__textarea {
+                font-family: $mainFont;
+                font-weight: 300;
+                font-size: 16px;
+                color: #AFAFAF;
+                width: 100%;
+                background-image: $inputGradient;
+                border: none;
+                padding: 10px;
+                resize: none;
             }
         }
 
@@ -135,13 +148,35 @@
                 text-shadow: .56px .83px 0px #51850E;
                 color: white;
                 flex-grow: 1;
-                margin-left: 15px;
-                margin-right: 15px;
-                margin-bottom: 15px;
+                margin: 0 15px 15px 15px;
+                padding: 5px 0;
                 background-image: $greenGradient;
                 border: 2px solid #7FBC5A;
                 border-radius: 3px;
                 cursor: pointer;
+
+                &--red {
+                    background-image: $redGradient;
+                    border-color: #C26F75;
+                    text-shadow: .56px .83px 0px #9E303C;
+                }
+
+                &--small {
+                    font-size: 18px;
+                }
+            }
+        }
+
+        .button-wrapper {
+            display: flex;
+
+            &__checkbox {
+                flex-grow: 1;
+                margin: 5px 10px 10px 15px;
+            }
+
+            &__button {
+                flex-grow: 1;
             }
         }
     }
