@@ -128,13 +128,46 @@
             font-family: $mainFont;
             font-weight: 300;
             font-size: 18px;
-            margin: 15px;
-            cursor: pointer;
+            margin-left: 15px;
+            margin-right: 15px;
+            margin-bottom: 10px;
 
             &__checkbox {
-                height: 15px;
-                width: 15px;
-                margin: 5px 15px 5px 5px;
+                display: none;
+
+                &+label span {
+                    display: inline-block;
+                    height: 25px;
+                    width: 25px;
+                    position: relative;
+                    background-image: $inputGradient;
+                    border: 2px solid #C6C6C6;
+                    border-radius: 5px;
+                }
+
+                &:checked+label span::before {
+                    content: '';
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    width: 60%;
+                    height: 60%;
+                    background-image: $greenGradient;
+                    border-radius: 2px;
+                }
+            }
+
+            &__label {
+                display: flex;
+                cursor: pointer;
+
+
+                .text {
+                    display: inline-block;
+                    letter-spacing: .5px;
+                    margin-left: 15px;
+                }
             }
         }
 
