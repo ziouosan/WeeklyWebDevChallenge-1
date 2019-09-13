@@ -54,10 +54,16 @@
                         <input class="input-container__input" type="email" placeholder="Email">
                     </label>
 
-                    <label class="form__input-container input-container">
+                    <label class="form__input-container input-container" for="location">
                         <span class="input-container__icon fas fa-map-marker-alt"></span>
                         <span class="input-container__label sr-only">Your location</span>
-                        <input class="input-container__input" type="text" placeholder="Your Location">
+                        <input class="input-container__input" type="text" placeholder="Your Location" list="locations">
+                        <datalist id="locations">
+                            <option value="Europe">
+                            <option value="North America">
+                            <option value="South America">
+                            <option value="Asia">
+                        </datalist>
                     </label>
 
                     <section class="form__input-container checkbox-container">

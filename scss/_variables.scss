@@ -1,11 +1,22 @@
+// FONTS
+
 $mainFont: 'Titillium Web';
+
+//GRADIENTS
+
 $inputGradient: linear-gradient(#F7F7F7, #9A9A9A);
 $greenGradient: linear-gradient(#B9E076, #5E851B);
 $redGradient: linear-gradient(#F58793, #9E303C);
 
-// $breakpoints: (xsmall: (min-width: 460px),
-//     small: (min-width: 640px),
-//     medium: (min-width: 800px),
-//     large: (min-width: 1024px),
-//     xlarge: (min-width: 1200px),
-//     xxlarge: (min-width: 1440px));
+//SHADOWS
+
+$textShadow: 1px 1.73px 2px #000;
+$greenTextShadow: .56px .83px 0px #51850E;
+$redTextShadow: .56px .83px 0px #9E303C;
+
+//BORDERS
+
+$formBorder: 20px solid rgba(0, 0, 0, 0.23);
+$formWrapperBorder: 1px solid #F4F4F4;
+$greenButtonBorder: 2px solid #7FBC5A;
+$inputContainerBorder: 2px solid #C6C6C6;
